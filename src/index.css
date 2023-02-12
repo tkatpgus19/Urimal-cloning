@@ -3,6 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1920px;
 }
 
 code {
@@ -10,7 +11,6 @@ code {
 }
 
 .header {
-  width: 100%;
   height: 130px;
 }
 
@@ -38,8 +38,8 @@ ul {
 
 .search {
   position: absolute;
-  left: 25%;
-  width: 50%;
+  left: 22%;
+  width: 55%;
   margin: 35px;
 }
 
@@ -48,17 +48,17 @@ ul {
   position: relative;
   max-width: 500px;
   width: 60%;
-  height: 50px;
+  height: 45px;
   font-size: 17px;
   padding-left: 15px;
   padding-top: 5px;
-  border: 4px solid #1C285F;
+  border: 5px solid #1C285F;
 }
 
 .search div {
   position: absolute;
   height: 100%;
-  width: 30%;
+  width: 36%;
   padding-top: 9px;
   text-align: right;
   padding-right: 20px;
@@ -66,7 +66,7 @@ ul {
   background: white;
   right: 164px;
   box-sizing: border-box;
-  border: 4px solid #1C285F;
+  border: 5px solid #1C285F;
   border-left: none;
 }
 
@@ -78,13 +78,13 @@ ul {
   box-sizing: content-box;
   margin: -1px;
   background-color: white;
-  color: #444;
-  border: 1px solid grey;
+  color: #666;
+  border: 1px solid #ccc;
   cursor: pointer;
 }
 
 .menu-btn {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .menu span {
@@ -108,6 +108,7 @@ ul {
 }
 
 a {
+  font-size: 15px;
   text-decoration: none;
   color: #333;
 }
@@ -183,7 +184,8 @@ a {
 }
 
 .content {
-  float: right;
+  position: absolute;
+  right: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -193,40 +195,319 @@ a {
 }
 
 .grid1 {
-  background-color: yellow;
-  padding: 30px;
   text-align: left;
+  padding-top: 30px;
+  color: black;
+  background: #F0B831;
+}
+.grid1 .grid-title {
+  font-size: 35px;
+  margin: 0px 30px 10px 30px;
+  cursor: pointer;
+}
+.grid1 .grid-table table {
+  font-size: 20px;
+  border-spacing: 30px 15px;
+  border-collapse: separate;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.grid1 .grid-table table td {
+  width: 50%;
+  border-bottom: 1px solid white;
+}
+.grid1 .grid-table table td i {
+  float: right;
+  color: white;
+}
+.grid1 .grid-table span {
+  font-size: 12px;
+  font-weight: initial;
+}
+.grid1 .phone {
+  position: absolute;
+  right: 80px;
+  top: 105px;
+}
+.grid1 .phone-icon {
+  float: left;
+  color: white;
+  font-size: 30px;
+}
+.grid1 .phone-text {
+  float: left;
+  margin-left: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.grid1 .phone-text-s {
+  font-size: 12px;
+  font-weight: initial;
+  margin-bottom: -5px;
 }
 
 .grid2 {
-  background-color: orange;
-  padding: 30px;
   text-align: left;
+  padding-top: 30px;
+  color: black;
+  background: #F27940;
+}
+.grid2 .grid-title {
+  font-size: 35px;
+  margin: 0px 30px 10px 30px;
+  cursor: pointer;
+}
+.grid2 .grid-table table {
+  font-size: 20px;
+  border-spacing: 30px 15px;
+  border-collapse: separate;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.grid2 .grid-table table td {
+  width: 50%;
+  border-bottom: 1px solid white;
+}
+.grid2 .grid-table table td i {
+  float: right;
+  color: white;
+}
+.grid2 .grid-table span {
+  font-size: 12px;
+  font-weight: initial;
+}
+.grid2 .phone {
+  position: absolute;
+  right: 80px;
+  top: 105px;
+}
+.grid2 .phone-icon {
+  float: left;
+  color: white;
+  font-size: 30px;
+}
+.grid2 .phone-text {
+  float: left;
+  margin-left: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.grid2 .phone-text-s {
+  font-size: 12px;
+  font-weight: initial;
+  margin-bottom: -5px;
 }
 
 .grid3 {
-  background-color: lightblue;
-  padding: 30px;
   text-align: left;
+  padding-top: 30px;
+  color: white;
+  background: #2A94AA;
+}
+.grid3 .grid-title {
+  font-size: 35px;
+  margin: 0px 30px 10px 30px;
+  cursor: pointer;
+}
+.grid3 .grid-table table {
+  font-size: 20px;
+  border-spacing: 30px 15px;
+  border-collapse: separate;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.grid3 .grid-table table td {
+  width: 50%;
+  border-bottom: 1px solid white;
+}
+.grid3 .grid-table table td i {
+  float: right;
+  color: white;
+}
+.grid3 .grid-table span {
+  font-size: 12px;
+  font-weight: initial;
+}
+.grid3 .phone {
+  position: absolute;
+  right: 80px;
+  top: 105px;
+}
+.grid3 .phone-icon {
+  float: left;
+  color: white;
+  font-size: 30px;
+}
+.grid3 .phone-text {
+  float: left;
+  margin-left: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.grid3 .phone-text-s {
+  font-size: 12px;
+  font-weight: initial;
+  margin-bottom: -5px;
 }
 
 .grid4 {
-  background-color: blueviolet;
-  padding: 30px;
   text-align: left;
+  padding-top: 30px;
+  color: white;
+  background: #5F5D92;
+}
+.grid4 .grid-title {
+  font-size: 35px;
+  margin: 0px 30px 10px 30px;
+  cursor: pointer;
+}
+.grid4 .grid-table table {
+  font-size: 20px;
+  border-spacing: 30px 15px;
+  border-collapse: separate;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.grid4 .grid-table table td {
+  width: 50%;
+  border-bottom: 1px solid white;
+}
+.grid4 .grid-table table td i {
+  float: right;
+  color: white;
+}
+.grid4 .grid-table span {
+  font-size: 12px;
+  font-weight: initial;
+}
+.grid4 .phone {
+  position: absolute;
+  right: 80px;
+  top: 105px;
+}
+.grid4 .phone-icon {
+  float: left;
+  color: white;
+  font-size: 30px;
+}
+.grid4 .phone-text {
+  float: left;
+  margin-left: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.grid4 .phone-text-s {
+  font-size: 12px;
+  font-weight: initial;
+  margin-bottom: -5px;
 }
 
 .grid5 {
-  background-color: gray;
-  padding: 30px;
   text-align: left;
+  padding-top: 30px;
+  color: white;
+  background: #3B3B3B;
+}
+.grid5 .grid-title {
+  font-size: 35px;
+  margin: 0px 30px 10px 30px;
+  cursor: pointer;
+}
+.grid5 .grid-table table {
+  font-size: 20px;
+  border-spacing: 30px 15px;
+  border-collapse: separate;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.grid5 .grid-table table td {
+  width: 50%;
+  border-bottom: 1px solid white;
+}
+.grid5 .grid-table table td i {
+  float: right;
+  color: white;
+}
+.grid5 .grid-table span {
+  font-size: 12px;
+  font-weight: initial;
+}
+.grid5 .phone {
+  position: absolute;
+  right: 80px;
+  top: 105px;
+}
+.grid5 .phone-icon {
+  float: left;
+  color: white;
+  font-size: 30px;
+}
+.grid5 .phone-text {
+  float: left;
+  margin-left: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.grid5 .phone-text-s {
+  font-size: 12px;
+  font-weight: initial;
+  margin-bottom: -5px;
 }
 
 .grid6 {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-  background-color: yellow;
-  padding: 30px;
   text-align: left;
+  padding-top: 30px;
+  color: black;
+  background: #04B486;
+}
+.grid6 .grid-title {
+  font-size: 35px;
+  margin: 0px 30px 10px 30px;
+  cursor: pointer;
+}
+.grid6 .grid-table table {
+  font-size: 20px;
+  border-spacing: 30px 15px;
+  border-collapse: separate;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.grid6 .grid-table table td {
+  width: 50%;
+  border-bottom: 1px solid white;
+}
+.grid6 .grid-table table td i {
+  float: right;
+  color: white;
+}
+.grid6 .grid-table span {
+  font-size: 12px;
+  font-weight: initial;
+}
+.grid6 .phone {
+  position: absolute;
+  right: 80px;
+  top: 105px;
+}
+.grid6 .phone-icon {
+  float: left;
+  color: white;
+  font-size: 30px;
+}
+.grid6 .phone-text {
+  float: left;
+  margin-left: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.grid6 .phone-text-s {
+  font-size: 12px;
+  font-weight: initial;
+  margin-bottom: -5px;
 }/*# sourceMappingURL=index.css.map */

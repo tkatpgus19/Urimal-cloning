@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faMessage, faBookBookmark, faPenToSquare, faThumbsUp, faNewspaper, faUser, faBullhorn, faComment, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faMessage, faBookBookmark, faPenToSquare, faThumbsUp, faNewspaper, faUser, faBullhorn, faComment, faMagnifyingGlass, faAngleRight, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -9,13 +9,99 @@ function App() {
       <Navbar/>
       <div className="content-box">
         <Sidebar/>
-
+        <div style={{'float': 'left'}}>
+          <img src='/img/img_visual.png'></img>
+        </div>
         <div className="content">
-          <div className='grid1'>1</div>
-          <div className='grid2'>1</div>
-          <div className='grid3'>1</div>
-          <div className='grid4'>1</div>
-          <div className='grid5'>1</div>
+          
+          <div className='grid1'>
+            <div className='grid-title'>사전</div>
+            <div className='grid-table'>
+              <table>
+                <tr>
+                  <td>우리말샘 <i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                  <td>표준국어대사전 <i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                </tr>
+                <tr>
+                  <td>한국어기초사전 <i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                  <td>한국수어사전 <i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+
+
+          <div className='grid2'>
+            <div className='grid-title'>국어 <strong>상담</strong></div>
+            <div className='grid-table'>
+              <table>
+                <tr>
+                  <td>온라인 상담<span>(온라인가나다)</span> <i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                  <td style={{'border' : '0px'}}></td>
+                  <div className='phone'>
+                    <div className='phone-icon'>
+                      <i><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></i>
+                    </div>
+                    <div className='phone-text'>
+                      <div className='phone-text-s'>전화 상담(가나다전화)</div>
+                      <div>1234-5678</div>
+                    </div>
+                  </div>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div className='grid3'>
+            <div className='grid-title'>어문 <strong>규범</strong></div>
+            <div className='grid-table'>
+              <table>
+                <tr>
+                  <td>어문 규정 보기<i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                  <td style={{'border' : '0px'}}></td>
+                </tr>
+                <tr>
+                  <td>용례 찾기 <i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                  <td style={{'border' : '0px'}}></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div className='grid4'>
+          <div className='grid-title'>공공언어 <strong>개선</strong></div>
+            <div className='grid-table'>
+              <table>
+                <tr>
+                  <td>다듬은 말<i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                  <td>공공 용어 번역<i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                </tr>
+                <tr>
+                  <td>공공언어 국민제보<i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                  <td>정책용어 사전 상담<i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div className='grid5'>
+            <div className='grid-table'>
+              <div className='grid-title'><strong>교육</strong></div>
+              <div className='grid-table'>
+                <table>
+                  <tr>
+                    <td>국어문화학교<i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                    <td style={{'border' : '0px'}}></td>
+                  </tr>
+                  <tr>
+                    <td>한국어교원 자격<i><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></i></td>
+                    <td style={{'border' : '0px'}}></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
           <div className='grid6'>
             <div>1</div>
             <div>1</div>
