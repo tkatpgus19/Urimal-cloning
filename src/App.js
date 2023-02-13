@@ -2,8 +2,24 @@ import logo from './logo.svg';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faMessage, faBookBookmark, faPenToSquare, faThumbsUp, faNewspaper, faUser, faBullhorn, faComment, faMagnifyingGlass, faAngleRight, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  var timer = 0;
+  useEffect(()=>{
+    const carousel = setInterval(() => {
+      timer == 0 ? timer += 33.3 : (timer == 33.3 ? timer += 33.3 : timer -= 66.6)
+      document.querySelector('.test1').style.transitionDuration = '500ms';
+      document.querySelector('.test1').style.transform = `translateX(-${timer}%)`;
+
+      document.querySelector('.test2').style.transitionDuration = '500ms';
+      document.querySelector('.test2').style.transform = `translateX(-${timer}%)`;
+    }, 2500)
+
+    return ()=> clearInterval(carousel);
+  },[]);
+
   return (
     <div className="App">
       <Navbar/>
@@ -103,8 +119,32 @@ function App() {
             </div>
           </div>
           <div className='grid6'>
-            <div>1</div>
-            <div>1</div>
+            
+            <div className='carousel-btn1'>
+              <div className='btn'></div>
+              <div className='btn'></div>
+              <div className='btn'></div>
+              <div className='btn'></div>
+              <div className='btn'></div>
+            </div>
+            <div className='test1'>
+              <img src="img/banner1.png"></img>
+              <img src="img/banner2.png"></img>
+              <img src="img/banner3.png"></img>
+            </div>
+
+            <div className='carousel-btn2'>
+              <div className='btn'></div>
+              <div className='btn'></div>
+              <div className='btn'></div>
+              <div className='btn'></div>
+              <div className='btn'></div>
+            </div>
+            <div className='test2'>
+              <img src="img/banner4.png"></img>
+              <img src="img/banner5.jpg"></img>
+              <img src="img/banner6.png"></img>
+            </div>
           </div>
         </div>
 

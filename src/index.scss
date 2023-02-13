@@ -117,8 +117,7 @@ body {
 	  float:left;
 	  background-color: #1C285F;
 	  width: 300px;
-	  height: 770px;
-	  border: 1px solid yellow;
+	  height: 780px;
   }
   .sidebar ul{
 	  padding: 0px;
@@ -131,7 +130,6 @@ body {
 	  height: 70px;
 	  text-align: left;
 	  color: #aaa;
-	  border: 1px solid red;
 	  line-height: 66px;
 	  padding-left: 35px;
 	  cursor: pointer;
@@ -149,13 +147,11 @@ body {
 	  text-align: center;
 	  color: white;
 	  font-size: 17px;
-	  border: 1px solid purple;
   }
   .sidebar i{
 	  font-size: 30px;
 	  margin-right: 25px;
 	  width: 30px;
-	  border: 1px solid purple;
   }
   
   .popup{
@@ -186,12 +182,12 @@ body {
 	  grid-template-rows: 1fr 1fr 1fr;
 	  width: 950px;
 	  background-color: greenyellow;
-	  height: 770px;
+	  height: 780px;
   }
   
-  @mixin grid($bg-color, $font-color){
+  @mixin grid($bg-color, $font-color, $padding-px){
 	  text-align: left;
-	  padding-top: 30px;
+	  padding-top: $padding-px;
 	  color: $font-color;
 	  background: $bg-color;
   
@@ -248,21 +244,85 @@ body {
   }
   
   .grid1{
-	  @include grid(#F0B831, black);
+	  @include grid(#F0B831, black, 30px);
   }
   .grid2{
-	  @include grid(#F27940, black);
+	  @include grid(#F27940, black, 30px);
   }
   .grid3{
-	  @include grid(#2A94AA, white);
+	  @include grid(#2A94AA, white, 30px);
   }
   .grid4{
-	  @include grid(#5F5D92, white);
+	  @include grid(#5F5D92, white, 30px);
   }
   .grid5{
-	  @include grid(#3B3B3B, white);
+	  @include grid(#3B3B3B, white, 30px);
   }
   .grid6{
-	  @include grid(#04B486, black);
-  }
+	  @include grid(#04B486, black, 0px);
+	  position: relative;
+	  overflow: hidden;
+	}
   
+
+  .test1{
+	background-color: red;
+	width: 300%;
+	height: 50%;
+	top: 0%;
+	position: absolute;
+	img{
+		width: 33.3%;
+		height: 100%;
+		float: left;
+	}
+  }
+
+  .test2{
+	background-color: red;
+	width: 300%;
+	height: 50%;
+	top: 50%;
+	position: absolute;
+	img{
+		width: 33.3%;
+		height: 100%;
+		float: left;
+	}
+  }
+
+  .carousel-btn1{
+	position: absolute;
+	z-index: 5;
+	width: 40%;
+	height: 15%;
+	bottom: 50%;
+	left: 30%;
+
+	.btn{
+		background-color: #044632;
+		width: 20px;
+		height: 20px;
+		float: left;
+		margin: 15px 5px 10px 12px;
+		border-radius: 50px;
+	}
+  }
+
+  .carousel-btn2{
+	position: absolute;
+	z-index: 5;
+	width: 40%;
+	height: 15%;
+	bottom: 0%;
+	left: 57%;
+
+	.btn{
+		background-color: #044632;
+		width: 20px;
+		height: 20px;
+		float: left;
+		margin: 15px 5px 10px 12px;
+		border-radius: 50px;
+	}
+  }
